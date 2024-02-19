@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器、盒子模型</title>
+</head>
+<style>
+    ul li {
+        color: blueviolet;
+    }
+
+    ul>li {
+        color: crimson
+    }
+
+    li+p {
+        color: red;
+    }
+
+    li~p {
+        color: blue;
+    }
+
+    /* div {
+        width: 1000px;
+        height: 500px;
+        padding: 20px;
+        border: 20px;
+        margin: 20px;
+    } */
+
+    .container {
+        width: 500px;
+        height: 500px;
+        padding: auto;
+        border: 10px solid gray;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-self:end;
+        align-items: left;
+        background-color: #000;
+    }
+
+    .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+
+    .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+
+    .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+    }
+</style>
+
+<body>
+    <ul>
+        <li>
+            子代选择器，对更深层次得元素不起作用
+        <li>后代选择器 选择所有得后代</li>
+        </li>
+
+        <li>相邻兄弟选择器</li>
+        <p>相邻兄弟选择器</p>
+    </ul>
+
+    <div>
+        <p>天街小雨润如酥，草色遥看近却无</p>
+        <img src="https://www.hebust.edu.cn/images/2024-02/76647f158c09438a850a1b89786f8398.jpg" alt="图片无法正常显示"
+            style="width: 50%;">
+    </div>
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+
+</html>
