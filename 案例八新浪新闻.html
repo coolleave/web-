@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="ch">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>案例八新浪新闻</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 360px;
+            height: 200px;
+            margin: 200px auto;
+            /* background-color: pink */
+
+        }
+
+        .title {
+            width: 360px;
+            height: 30px;
+            background-color: #eeeeee;
+            border: 1px solid #dbdee1;
+            border-left: 0;
+        }
+
+        .title a {
+            display: block;
+            /* 小技巧父级有边框，把自己向上移动一个像素 */
+            margin-top: -1px;
+            border-top: 3px solid #ffad55;
+            width: 50px;
+            height: 30px;
+            background-color: #ffffff;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .container .conetnt {
+            width: 360px;
+            height: 170px;
+            background-color: #ffffff;
+        }
+
+        .content li {
+            background-image: url(./square.png);
+            background-repeat: no-repeat;
+            background-position: 0 center;
+            padding-left: 12px;
+
+            line-height: 24px;
+           
+        }
+
+        .content a {
+            font-size: 12px;
+
+            padding-left: 20px;
+            color: #737c7c;
+            background-image: url(./img.gif);
+            background-repeat: no-repeat;
+            background-position: 0 center;
+            line-height: 24px;
+            
+
+        }
+
+        .content a:hover {
+            color: #ee9655;
+        }
+    </style>
 </head>
+<div class="container">
+    <div class="title">
+        <a>新闻</a>
+    </div>
+    <div class="content">
+        <ul>
+            <li><a href="#">点赞“新农人” 温暖的伸手</a></li>
+            <li><a href="#">在希望的田野上...</a></li>
+            <li><a href="#">“中国天眼”又有新发现 已在《自然》杂志发表</a></li>
+            <li><a href="#">急!这个领域，缺人!月薪4万元还不好招! 啥情况?</a></li>
+            <li><a href="#">G9“带货”背后: 亏损面持续扩大，竞争环境激烈</a></li>
+            <li><a href="#">多地力推二手房“带押过户”，有什么好处?</a></li>
+
+        </ul>
+
+    </div>
+</div>
 
 <body>
-    
+
 </body>
+
 </html>
