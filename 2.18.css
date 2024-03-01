@@ -1,0 +1,72 @@
+* {
+    color: black;
+    font-size: 25px;
+}
+
+.menu {
+    color: blue;
+    font-size: 35px;
+}
+
+.content {
+    color: azure;
+    font-size: 25px;
+
+}
+
+#tip {
+    color: brown;
+    font-size: 15;
+}
+
+.c1 {
+    color: cyan;
+}
+
+.c2 {
+    color: crimson;
+}
+
+/* 字体属性 */
+p {
+    color: rgb(108, 84, 29);
+    font-size: large;
+    font-weight: 700;
+    font-style: italic;
+    font-family: "微软雅黑";
+
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.box2 {
+    width: 1920px;
+    height: 800px;
+    background-image: url(https://www.hebust.edu.cn/images/2024-02/4e6afee4422b44c4a5bac7c1da66452a.png);
+}
+
+h3 {
+    text-align: center;
+    text-decoration: double;
+    text-indent: 20px;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    color: brown;
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+    vertical-align: center;
+}

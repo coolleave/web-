@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位</title>
+
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 20px;
+            animation: breathe 2700ms ease-in-out infinite alternate;
+
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            box-shadow: 0 10px 20px gray;
+        }
+
+        .box3:hover {
+            animation: myanmi 10s linear 0s 1 normal running;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes myanmi {
+            0% {
+                background-color: rgb(45, 168, 45);
+            }
+
+            100% {
+                background-color: rgb(142, 226, 142);
+            }
+        }
+
+        .box2:hover {
+            background-color: rgb(218, 121, 121);
+            box-shadow: 0 10px 20px gray;
+            width: 150px;
+            height: 150px;
+        }
+
+        @keyframes breathe {
+            0% {
+
+                opacity: .2;
+                box-shadow: 0 1px 2px rgba(255, 255,
+                        255, 0.1)
+            }
+
+            50% {
+                /* width: 150px;
+                height: 150px; */
+                opacity: .5;
+                box-shadow: 0 1px 2px rgba(18, 190,
+                        84, 0.76)
+            }
+
+            100% {
+                width: 150px;
+                height: 150px;
+                opacity: 1;
+                box-shadow: 0 1px 30px rgba(59, 255,
+                        255, 1)
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            .box4 {
+                background-color: pink;
+                width: 100px;
+                height: 100px;
+            }
+
+            #cpter {
+                display: none;
+            }
+
+        }
+
+        @media screen and (min-width: 301px) {
+            .box4 {
+                background-color: rgb(18, 169, 23);
+                width: 100px;
+                height: 100px;
+            }
+
+            #phone {
+                display: none;
+            }
+
+        }
+    </style>
+    <link rel="stylesheet" href="./font/iconfont.css">
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <p id="phone">手机</p>
+    <p id="cpter">电脑</p>
+    <span class="iconfont icon-school"> 学校</span>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+/* 所有的标签全部匹配属性 全局选择器*/
+*{
+    color: black;
+}
+/* 指定标签匹配属性 元素选择器*/
+h1{
+    color: blue;
+    font-size: 20px;
+}
+/* 指定类匹配属性 类选择器，使用最多*/
+.oneclass{
+    color:blueviolet;
+    font-size: 30px;
+}
+.size{
+    font-size: 10px;
+}
