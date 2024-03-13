@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>体验</title>
+</head>
+<style>
+  .pink {
+    background-color: pink;
+  }
+</style>
+
+<body>
+  <button class="pink">按钮1</button>
+  <button>按钮2</button>
+  <button>按钮3</button>
+  <button>按钮4</button>
+
+
+  <!-- js分为三种，有内部js，外部js和行内js -->
+  <!-- 这种是内部js -->
+  <!-- js一定要写到最后,因为html是按顺序执行,而js就是对前面的标签进行操作 -->
+  <script>
+    alert('我是内部js')
+  </script>
+
+  <!-- 外部js标签里不要写,写的话也会被过滤 -->
+  <script src="./my.js"> </script>
+</body>
+
+</html>
