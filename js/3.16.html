@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3.16</title>
+</head>
+
+<body>
+
+  <script>
+
+    // 弹窗问候
+    alert('你好js')
+    // 输入提示
+    let name = prompt('请输入姓名')
+    // 打印
+    document.write(name)
+
+    let r = prompt("请输入半径")
+    document.write(3.14 * r * r)
+    // 模板字符串
+    document.write(`面积是${3.14 * r * r}。`)
+
+    console.log('他会魔法吧')
+
+    // 小技巧，在字符串前 + 可以将字符串转化为number类型
+    let num = +prompt("请输入数字")
+
+
+    // parseInt
+    // 保留整数，可以保留字符串中的整数，并且转化为number类型
+    // 但注意，必须是int类型
+    console.log(parseInt("2850px你"))
+
+
+  </script>
+</body>
+
+</html>
