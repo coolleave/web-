@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3.16综合案例 小米表格</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    li {
+      list-style: none;
+    }
+
+    h2 {
+
+      text-align: center;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+
+    table {
+
+      border: 1px solid #000;
+      border-collapse: collapse;
+      margin: auto;
+      text-align: center;
+
+    }
+
+    th,
+    td {
+      border: 1px solid #000;
+      width: 100px;
+      height: 30px;
+    }
+
+    .title {
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>订单确认</h2>
+
+  <script>
+    let num = +prompt("请输入数量")
+    let address = prompt("请输入收货地址")
+    let total = num * 1999
+
+    // 页面渲染
+    document.write(`
+    <table>
+    <tr>
+      <th class="title">商品名称</th>
+      <th>商品价格</th>
+      <th>商品数量</th>
+      <th>总价</th>
+      <th>收获地址</th>
+    </tr>
+    <tr>
+      <td class="title">小米手机香吞PLUS</td>
+      <td>1999元</td>
+      <td>${num}</td>
+      <td>${total}</td>
+      <td>${address}</td>
+    </tr>
+  </table>
+
+    `)
+  </script>
+</body>
+
+</html>
