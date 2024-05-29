@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let money = 100
+        while (true) {
+
+            let choice = +prompt(`1.存钱<br>2.取钱<br>3.查看余额<br>4.退出`)
+            if (choice === 1) {
+                money += prompt("存多少？")
+            }
+            if (choice === 2) {
+                let reduce = +prompt("取多少？")
+                if(reduce > money){
+                    alert(`没那么多`)
+                }
+                else{
+                    money -= reduce
+                }
+            }
+            if (choice === 3) {
+                alert(`${money}`)
+            }
+            if (choice === 4) {
+               break
+            }
+        }
+    </script>
+</body>
+
+</html>
