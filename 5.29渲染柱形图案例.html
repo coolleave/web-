@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            margin: auto;
+            margin-top: 100px;
+            width: 800px;
+            height: 300px;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            display: flex;
+
+            justify-content: space-around;
+            align-items: flex-end;
+
+
+        }
+
+        .geo {
+
+            width: 70px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+        }
+
+
+        .inner {
+
+            background-color: pink;
+            margin-bottom: 10px;
+        }
+
+        span {
+
+            text-align: center;
+            /* 水平居中对齐 */
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box">
+        <div class="geo">
+            <span>122</span>
+            <div class="inner" style="width: 70px; height: 113px;"></div>
+            <h4>第一季度</h4>
+        </div>
+        <div class="geo">
+            <span>123</span>
+            <div class="inner" style="width: 70px; height: 123px;"></div>
+            <h4>第二季度</h4>
+        </div>
+        <div class="geo">
+            <span>123</span>
+            <div class="inner" style="width: 70px; height: 123px;"></div>
+            <h4>第三季度</h4>
+        </div>
+        <div class="geo">
+            <span>123</span>
+            <div class="inner" style="width: 70px; height: 123px;"></div>
+            <h4>第四季度</h4>
+        </div>
+
+
+
+    </div> -->
+
+
+    <script>
+        document.write(`<div class="box">`)
+        let arr = []
+        for (let i = 0; i < 4; i++) {
+            arr.push(prompt(`请输入第${i + 1}季度数据`))
+        }
+
+        for (let i = 0; i < 4; i++) {
+            document.write(` <div class="geo">
+            <span>${arr[i]}</span>
+            <div class="inner" style="width: 70px; height: ${arr[i]}px;"></div>
+            <h4>第${i+1}季度</h4>
+        </div>`)
+        }
+
+        document.write(`</div>`)
+
+    </script>
+</body>
+
+</html>
