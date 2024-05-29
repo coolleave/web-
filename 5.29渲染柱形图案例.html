@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* 去除边距 */
         * {
             margin: 0px;
             padding: 0px;
         }
-
+        /* 整体布局 */
         .box {
             margin: auto;
             margin-top: 100px;
@@ -82,12 +83,16 @@
 
 
     <script>
+        // 打印整体盒子
         document.write(`<div class="box">`)
         let arr = []
+
+        // 循环接收数据
         for (let i = 0; i < 4; i++) {
             arr.push(prompt(`请输入第${i + 1}季度数据`))
         }
 
+        // 循环打印数据块
         for (let i = 0; i < 4; i++) {
             document.write(` <div class="geo">
             <span>${arr[i]}</span>
